@@ -1,3 +1,25 @@
+nlp_european_policy_lda_pipeline
+--------------------------------------
+Even though the lower cells in this specific file focus on the data preprocessing and corpus compilation steps (using PlaintextCorpusReader), the top imports prove that this notebook was built as the Data Preparation and Feature Engineering pipeline for an LDA Topic Modeling Engine.
+
+In research workflows, you have to split the texts into sentences and clean them before you can feed them into Gensim's corpora.Dictionary to train the LDA model. That is exactly what you were doing here.
+
+This notebook serves as the critical preprocessing and feature engineering engine required to prepare messy text data for unsupervised cluster learning. It executes the following mathematical data science operations:
+
+Gensim Topic Modeling Workspace (gensim, corpora): Cell 5 initializes the explicit framework hooks for training unsupervised Latent Dirichlet Allocation (LDA) models, specifically importing gensim.corpora as corpora and from gensim.models import CoherenceModel to calculate topic-separation stability scores.
+
+Interactive Semantic Cluster Visualization (pyLDAvis): Cell 5 imports pyLDAvis.gensim_models to construct interactive, web-based inter-topic distance maps, which are essential for explaining abstract text dimensions to utility operators or policy reviewers.
+
+Linguistic Feature Normalization (spacy, nltk): Cells 6 and 7 initialize and verify the programmatic load of SpaCy’s natural language processing framework (en_core_web_sm). This is used to handle part-of-speech tagging and lexical lemmatization, stripping grammatical endings so words are grouped by their base semantic dictionary form before topic training.
+
+Custom Regex Character Sanitization Loop (re, string): Cell 10 contains your custom text-cleaning module (clean_text). It utilizes regular expressions (re.split('\\W+', no_numbers)) and string character loops to programmatically strip punctuation, remove linebreaks (\n), filter out numerical digits (isdigit()), and eliminate high-frequency linguistic noise via an NLTK stopwords registry.
+
+Punkt Tokenization & File Serialization (sent_tokenize): Cell 12 sets up an automated folder iteration loop (os.listduir) that reads raw strategy texts via a utf-8 layout, removes newline characters, and chunks unstructured text blocks into index-aligned sentence files using the NLTK Punkt tokenizer (english.pickle), which are then converted directly into Pandas DataFrames and written out to disk (to_csv).
+
+Plaintext Corpus Construction (PlaintextCorpusReader): Cells 13 and 26 implement NLTK's corpus reader to batch-process the newly generated file directory (for_corpus) into a unified, multi-indexed document text matrix, as seen in the df_corpus.head() matrix view containing strategies from Austria, Belgium, Bulgaria, the Czech Republic, and Denmark.
+
+
+
 nlp_batch_pdf_text_extraction.ipynb
 ---------------------------------------
 File Topology Automation (os): You used the os module to interact with your local directory stack, building array maps of multi-national policy texts (os.listdir).
