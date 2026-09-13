@@ -10,6 +10,9 @@ Cross-border natural language processing and unsupervised machine learning pipel
 - **`nlp_berlin_vader_sentiment.ipynb`**: Deploys rule-based sentiment extraction loops over the 730 parsed sentences of the Berlin municipal framework. Employs the NLTK VADER lexicon engine to programmatically calculate polarity vector weights (negative, neutral, positive, and compound metrics) across administrative statements, merging arrays into structured data outputs via Pandas.
 - **`nlp_policy_sentence_tokenizer.ipynb`**: Implements a modular sentence-chunking pipeline utilizing the NLTK Punkt tokenization engine. Programmatically parses unstructured policy texts into discrete, index-aligned string arrays, handling newline removals and converting raw strategy data tables into exportable CSV datasets via Pandas matrix constructions.
 
+- **`nlp_batch_pdf_text_extraction.ipynb`**: Houses the batch data ingestion pipeline that standardizes, cleans, and converts multi-national policy documents. Automates string file-renaming loops and deploys the Apache Tika parser engine (`tika.parser`) to programmatically extract raw textual metadata across 26 European Union national AI strategies, resolving encoding anomalies into sanitized `utf-8` text matrices.
+
+
 
 
 
