@@ -1,7 +1,8 @@
 # national-ai-strategy-text-mining
 Cross-border natural language processing and unsupervised machine learning pipelines analyzing national AI strategies across African and European Union nations.
 
-- **`nlp_multi_national_corpus_ingestion.ipynb`**: Automates multi-national policy document ingestion and text normalization. Uses NLTK's `PlaintextCorpusReader` to batch-process European AI strategies into a structured corpus, implementing sentence-level tokenization pipelines. Features structural configurations and library hooks (`Gensim`, `pyLDAvis`, `CoherenceModel`) designed to prepare text arrays for unsupervised Latent Dirichlet Allocation (LDA) topic modeling and interactive visualization.
+- **`nlp_european_policy_lda_pipeline.ipynb`**: Automates multi-national policy document ingestion, regular expression syntax sanitization, and sentence-level corpus parsing across unstructured text datasets. Standardises national AI strategy frameworks from Austria, Belgium, Bulgaria, the Czech Republic, and Denmark into index-aligned Pandas data layers. Features structural import hooks and environment variables for training **Gensim LDA (Latent Dirichlet Allocation)** topic models, computing validation metrics (`CoherenceModel`), and initializing interactive web dashboards via `pyLDAvis`.
+
 
 - **`nlp_european_policy_clustering.ipynb`**: Houses an unsupervised machine learning pipeline that ingests raw national AI policy texts from Austria, Belgium, Bulgaria, Denmark, Estonia, and the Czech Republic. Deploys NLTK tokenization and Scikit-Learn's KMeans clustering algorithms to group international strategies programmatically by semantic and thematic similarity, validating cluster stability via Adjusted Rand Scores.
 
