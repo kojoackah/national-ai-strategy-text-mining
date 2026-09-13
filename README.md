@@ -7,6 +7,9 @@ Cross-border natural language processing and unsupervised machine learning pipel
 
 - **`nlp_strategy_ingestion_blueprint.ipynb`**: Houses the core template infrastructure and modular code blocks utilized across the research pipelines. Consolidates Python logic frameworks for sentence-level NADER polarity scoring, cleaning regex routines, TfidfVectorizer fit-transform operations, and token frequency calculations (`FreqDist`) exported to standalone CSV tables.
 
+- **`nlp_berlin_vader_sentiment.ipynb`**: Deploys rule-based sentiment extraction loops over the 730 parsed sentences of the Berlin municipal framework. Employs the NLTK VADER lexicon engine to programmatically calculate polarity vector weights (negative, neutral, positive, and compound metrics) across administrative statements, merging arrays into structured data outputs via Pandas.
+
+
 
 ## Key Programmatic Competencies Demonstrated
 - **Multi-National Corpus Ingestion:** Engineered robust batch file-processing loops capable of scaling text-mining operations across diverse country-specific text encodings.
