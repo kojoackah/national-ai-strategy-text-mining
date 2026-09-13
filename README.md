@@ -5,6 +5,9 @@ Cross-border natural language processing and unsupervised machine learning pipel
 
 - **`nlp_berlin_smart_city_preprocessing.ipynb`**: Implements a complete text normalization and feature engineering pipeline over the "Smart City Strategy Berlin" public policy framework. Automates lowercasing, digit filtering, punctuation stripping, and NLTK lemmatization before constructing a term importance feature matrix via Scikit-Learn `TfidfVectorizer` mapped into structured Pandas data layers.
 
+- **`nlp_strategy_ingestion_blueprint.ipynb`**: Houses the core template infrastructure and modular code blocks utilized across the research pipelines. Consolidates Python logic frameworks for sentence-level NADER polarity scoring, cleaning regex routines, TfidfVectorizer fit-transform operations, and token frequency calculations (`FreqDist`) exported to standalone CSV tables.
+
+
 ## Key Programmatic Competencies Demonstrated
 - **Multi-National Corpus Ingestion:** Engineered robust batch file-processing loops capable of scaling text-mining operations across diverse country-specific text encodings.
 - **Unsupervised Matrix Clustering:** Mapped abstract, qualitative text arrays into sparse TF-IDF coordinate blocks to evaluate latent structural overlaps between different nations' goals.
