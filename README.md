@@ -8,6 +8,8 @@ Cross-border natural language processing and unsupervised machine learning pipel
 - **`nlp_strategy_ingestion_blueprint.ipynb`**: Houses the core template infrastructure and modular code blocks utilized across the research pipelines. Consolidates Python logic frameworks for sentence-level NADER polarity scoring, cleaning regex routines, TfidfVectorizer fit-transform operations, and token frequency calculations (`FreqDist`) exported to standalone CSV tables.
 
 - **`nlp_berlin_vader_sentiment.ipynb`**: Deploys rule-based sentiment extraction loops over the 730 parsed sentences of the Berlin municipal framework. Employs the NLTK VADER lexicon engine to programmatically calculate polarity vector weights (negative, neutral, positive, and compound metrics) across administrative statements, merging arrays into structured data outputs via Pandas.
+- **`nlp_policy_sentence_tokenizer.ipynb`**: Implements a modular sentence-chunking pipeline utilizing the NLTK Punkt tokenization engine. Programmatically parses unstructured policy texts into discrete, index-aligned string arrays, handling newline removals and converting raw strategy data tables into exportable CSV datasets via Pandas matrix constructions.
+
 
 
 
