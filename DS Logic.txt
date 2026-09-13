@@ -1,0 +1,45 @@
+nlp_batch_pdf_text_extraction.ipynb
+---------------------------------------
+File Topology Automation (os): You used the os module to interact with your local directory stack, building array maps of multi-national policy texts (os.listdir).
+
+String Normalization & File Renaming: You engineered a loop to dynamically isolate text prefixes, strip out messy spaces and legacy string tags (file.split()[0]), and batch-rename variables to standardize the layout of your file registry.
+
+PDF Apache Tika Extraction Backend (tika.parser): You imported the advanced Apache tika engine to bypass complex document layer barriers, programmatically converting 26 massive, multi-page PDFs into raw data dictionaries (parser.from_file).
+
+Unicode Sanitization and Ingestion (utf-8): You wrote code to encode the parsed text blocks directly into utf-8, incorporating errors='ignore' parameters to strip character layout anomalies before writing the string streams out to functional .txt tracking matrices.
+
+nlp_european_policy_clustering.ipynb
+-------------------------------
+
+Corpus Batch Ingestion Loop (glob, json): Your pipeline includes data management utilities (load_data, write_data) designed to programmatically unpack structured text batches. It points to a raw localized text registry (eng_corpus.txt) representing a merged dataset of multi-national strategies.
+
+String Vectorization Framework (sklearn): You imported TfidfVectorizer to break down raw document strings and extract spatial weight matrices across the text blocks.
+
+Unsupervised Clustering Pipeline (KMeans): You imported the KMeans algorithm and adjusted_rand_score from scikit-learn. This proves that you were group-clustering these international policy texts by semantic similarity to find latent structural overlaps between different nations' goals.
+
+Text Cleanup Engine (nltk, re): You set up data cleaning layers using regular expressions (re), punctuation punctuation strips (string), and the Natural Language Toolkit (nltk.corpus.stopwords) to strip out structural text noise before passing the policy data into the machine learning algorithm.
+
+
+
+nlp_berlin_smart_city_preprocessing.ipynb
+-----------------------------------------------
+Text Case Normalization: You loaded the raw text file and lowercased the entire string corpus using a custom tokenization list function (to_lower), mapping out text entries sequentially.
+
+Character Sanitization Layer: You ran list comprehensions to programmatically strip numerical anomalies (isdigit()) and text punctuation patterns out of the corpus.
+
+Lemmatization Pipeline: You imported the NLTK WordNetLemmatizer to handle lexical normalization across the policy corpus.
+
+TF-IDF Feature Space Construction: You configured Scikit-Learn's TfidfVectorizer to fit over your string tokens, transforming the strategy text into high-dimensional sparse array vectors to capture word weights.
+
+Pandas Structural Matrix Mapping: Your final cell initializes a clean pandas.DataFrame layout using your extracted vector features as matrix columns to map out term importance distributions.
+
+
+
+nlp_strategy_ingestion_blueprint
+--------------------------------------
+
+VADER Polarity Sentiment Analytics: Tokenizes text blocks into discrete sentences and applies rule-based lexicon scoring via SentimentIntensityAnalyzer to output continuous semantic polarity distributions mapped into clean CSV metrics.
+
+TF-IDF Array Feature Extraction & Salience Ranking: Leverages regular expressions, text cleaning loops, and Scikit-Learn's TfidfVectorizer to extract vocabulary sets, programmatically isolate inverse document frequency (.idf_) weights, and export sorted structural term tables.
+
+Lexical Preprocessing & Frequency Distribution Loops: Houses your Lemmatization (WordNetLemmatizer), punctuation normalization, stopword filtering pipelines, and frequency tracking tools (FreqDist) designed to visualize word-salience counts.
