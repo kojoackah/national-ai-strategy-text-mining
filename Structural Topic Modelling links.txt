@@ -1,0 +1,59 @@
+
+
+
+-----------------------------------------------------
+
+Corpus Analysis
+
+
+How to perform topic modeling with Top2Vec
+https://towardsdatascience.com/how-to-perform-topic-modeling-with-top2vec-1ae9bb4e89dc
+
+
+Introduction to The Structural Topic Model (STM)
+https://towardsdatascience.com/introduction-to-the-structural-topic-model-stm-34ec4bd5383
+
+Beginner’s Guide to LDA Topic Modelling with R:  https://towardsdatascience.com/beginners-guide-to-lda-topic-modelling-with-r-e57a5a8e7a25
+
+Topic Modeling in Python: Latent Dirichlet Allocation (LDA):
+https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0
+
+Topic Modeling With Latent Dirichlet Allocation
+https://towardsdatascience.com/topic-modeling-with-latent-dirichlet-allocation-ea3ebb2be9f4
+
+Topic Modeling with Latent Semantic Analysis
+https://towardsdatascience.com/topic-modeling-with-latent-semantic-analysis-58aeab6ab2f2
+
+Topic modeling visualization – How to present the results of LDA models?
+https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/
+
+Evaluate Topic Models: Latent Dirichlet Allocation (LDA)
+https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0
+
+----------------------------------------------------------------------
+
+Some paper I couldn't download: https://onlinelibrary.wiley.com/doi/epdf/10.1111/psj.12343
+
+
+Bubble plots (this should be created for the entire corpus, i.e. individual AI policy docs put together)
+
+
+data = 
+Y - Term Frequency-Inverse Document Frequency
+X -  Year [2017, 2018, 2019, 2020, 2021]
+hue - topic/Narrative
+size - frequency
+alpha = 0.5
+sizes - 20,400
+
+sns.scatterplot(data= , x="year_of_pub", y="tf_idf",
+size="frequency", hue= "narrative", 
+
+
+# use the scatterplot function (Example)
+sns.scatterplot(data=data, x="gdpPercap", y="lifeExp", size="pop", hue="continent", alpha=0.5, sizes=(20, 400))
+
+# show the graph
+plt.show()
+
+Source: https://www.python-graph-gallery.com/bubble-plot-with-seaborn
